@@ -21,8 +21,8 @@ class Train(models.Model):
     
     # def save(self, *args, **kwargs):
     #     if self.deadline_failed_time == 3:
-    #         send_warrning_mail(self.user.email)
-    #     if now() > self.deadline:
+            # send_warning_mail(self.user.email)  # todo create send_warrning_email function
+    #     if now() > self.upload_at:  #? is self.upload_at point to the time instance has been saved 
     #         self.deadline_failed_time += 1
     #         super().save(*args, **kwargs)
     #     else:
